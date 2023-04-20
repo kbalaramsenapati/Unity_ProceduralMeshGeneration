@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491010163}
-  - component: {fileID: 1491010164}
   - component: {fileID: 1491010165}
   m_Layer: 0
   m_Name: GameManager
@@ -156,29 +155,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1491010164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1491010162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729d37cedd0290f48acb05551bb708fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  defense: 0
-  movementSpeed: 0
-  attack: 0
-  attackRange: 0
-  attackSpeed: 0
-  magicResistance: 0
-  hasMagic: 1
-  mana: 0
-  magicType: 1
-  magicDamage: 0
 --- !u!114 &1491010165
 MonoBehaviour:
   m_ObjectHideFlags: 0
