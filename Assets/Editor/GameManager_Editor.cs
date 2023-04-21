@@ -1,4 +1,5 @@
 using UnityEditor;
+using UnityEngine;
 using static EnemyStatsEditor;
 
 [CustomEditor(typeof(GameManager))]
@@ -6,9 +7,10 @@ public class GameManager_Editor : Editor
 {
     public enum ShapeCategory
     {
-        None,TwoDimensional, Threedimensional
+        None, TwoDimensional, Threedimensional
     }
     public ShapeCategory categoryToShape;
+    private bool Triangle = false;
     public override void OnInspectorGUI()
     {
         // Display the enum popup in the inspector
@@ -34,10 +36,17 @@ public class GameManager_Editor : Editor
 
     void DisplayTwoDimensionalInfo()
     {
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("Triangle"));
-        EditorGUILayout.PropertyField(serializedObject.FindProperty("Square"));
-        //EditorGUILayout.PropertyField(serializedObject.FindProperty("defense"));
-        //EditorGUILayout.PropertyField(serializedObject.FindProperty("movementSpeed"));
+        Triangle = EditorGUILayout.Toggle("Triangle", Triangle);
+        if (Triangle)
+        {
+            EditorGUILayout.PropertyField(serializedObject.FindProperty("Triangle1"));
+        }
+
+        #region Dustbin
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("Triangle"));
+        //EditorGUILayout.PropertyField(serializedObject.FindProperty("Square"));
+
+        #endregion
     }
     void DisplayThreeDimensionalInfo()
     {
@@ -45,4 +54,5 @@ public class GameManager_Editor : Editor
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("defense"));
         //EditorGUILayout.PropertyField(serializedObject.FindProperty("movementSpeed"));
     }
+
 }

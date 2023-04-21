@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Header("2D")]
-    public bool Triangle;
-    public bool Square;
+    //[Header("Triangle")]
+    //public Vector3;
 
-    [Header("3D")]
-    public bool Cube;
+
+    //[Header("3D")]
+    //public bool Cube;
     
 }

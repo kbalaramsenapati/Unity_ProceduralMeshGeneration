@@ -167,9 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab10693003bb8a3478e63a2c65072f67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Triangle: 0
-  Square: 0
-  Cube: 0
 --- !u!1 &1946616826
 GameObject:
   m_ObjectHideFlags: 0
